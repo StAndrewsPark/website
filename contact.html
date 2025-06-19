@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Surveys | St Andrews Park, Norwich</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>St Andrews Park</h1>
+            <p class="subtitle">Norwich's Community Green Space</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rules.html">Park Rules</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>Contact & Surveys</h2>
+            <p class="intro-text">We value your feedback and questions about St Andrews Park</p>
+        </section>
+
+        <div class="contact-grid">
+            <section class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="parkContactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="event">Event Information</option>
+                            <option value="volunteer">Volunteering</option>
+                            <option value="issue">Report an Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="park-survey">
+                <h3>Park Satisfaction Survey</h3>
+                <p>Help us improve St Andrews Park by completing our short survey:</p>
+                <div class="survey-options">
+                    <a href="https://forms.example.com/park-survey" class="survey-btn">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Take Our Survey</span>
+                    </a>
+                    <p class="survey-note">Survey takes approximately 5 minutes</p>
+                </div>
+                
+                <div class="survey-results">
+                    <h4>Last Survey Results (June 2023)</h4>
+                    <div class="result-meter">
+                        <div class="result-category">
+                            <label>Cleanliness</label>
+                            <div class="meter-bar"><span style="width: 88%"></span></div>
+                            <span class="score">88%</span>
+                        </div>
+                        <div class="result-category">
+                            <label>Facilities</label>
+                            <div class="meter-bar"><span style="width: 76%"></span></div>
+                            <span class="score">76%</span>
+                        </div>
+                        <div class="result-category">
+                            <label>Safety</label>
+                            <div class="meter-bar"><span style="width: 92%"></span></div>
+                            <span class="score">92%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="contact-info">
+            <h3>Other Ways to Reach Us</h3>
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>General Inquiries:<br>
+                    <a href="mailto:info@standrewsparknorwich.org">info@standrewsparknorwich.org</a></p>
+                    <p>Friends Group:<br>
+                    <a href="mailto:friends@standrewsparknorwich.org">friends@standrewsparknorwich.org</a></p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>Park Warden:<br>
+                    <a href="tel:01603123456">01603 123456</a></p>
+                    <p>Norwich City Council Parks Dept:<br>
+                    <a href="tel:03441234000">0344 123 4000</a></p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Visit Us</h4>
+                    <address>
+                        St Andrews Park<br>
+                        St Andrews Street<br>
+                        Norwich, NR2 4TP
+                    </address>
+                    <p>Park Warden's office open Mon-Fri 9am-3pm</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-notice">
+            <h3><i class="fas fa-exclamation-triangle"></i> Emergency Contacts</h3>
+            <p>For immediate assistance with dangerous situations, vandalism, or injured wildlife:</p>
+            <ul class="emergency-list">
+                <li>Police (non-emergency): <a href="tel:101">101</a></li>
+                <li>Emergency: <a href="tel:999">999</a></li>
+                <li>Norwich City Council Out of Hours: <a href="tel:01603412345">01603 412345</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
